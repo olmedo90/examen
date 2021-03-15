@@ -47,7 +47,7 @@ $audio->execute();
           <th><?php echo $listaudio['detalle']; ?> </th>
           <th><?php echo $listaudio['nombre']; ?></th>
           <th> <?php echo $listaudio['precio']; ?></th>
-          <th> <?php $hoy = getdate(); print_r($hoy['hours']); ?></th>
+          <th> <?php $hoy = getdate(); print_r($hoy['hours'].':'.$hoy['minutes']); ?></th>
         </tr>
         <?php
         echo '
